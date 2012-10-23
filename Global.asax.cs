@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.SessionState;
+using System.Diagnostics;
 
 namespace aspnet01
 {
@@ -14,6 +10,8 @@ namespace aspnet01
         {
             // Code that runs on application startup
 
+            // Imperative add trace
+            // Trace.Listeners.Add(new AzureTraceListener.AzureTraceListener(@"..\..\logFiles\aspnet01"));
         }
 
         void Application_End(object sender, EventArgs e)
